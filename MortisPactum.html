@@ -613,7 +613,7 @@ a,x,a,a,a,x,x,x,x,1a,19,1b,x,c,x,a
 a,x,x,x,x,x,a,13,z,1c,1e,1d,10,a,x,a
 a,x,a,x,a,a,a,x,x,x,1f,x,x,a,x,c
 a,x,a,x,a,x,x,x,x,x,1g,x,x,a,x,a
-a,x,a,x,a,x,a,a,a,g,a,a,x,a,x,a
+a,x,a,x,a,x,a,a,a,0,a,a,x,a,x,a
 c,x,x,x,a,x,a,0,0,0,0,a,x,a,x,a
 a,x,a,a,a,x,a,0,0,0,0,a,x,a,x,a
 a,x,x,x,a,a,c,0,0,0,0,a,x,x,x,a
@@ -626,6 +626,7 @@ a,x,x,x,x,x,x,x,x,x,x,x,x,x,x,a
 a,a,a,a,a,a,c,a,a,a,a,a,a,a,a,a
 NAME room boss 2 morto pós diálogo 2
 PAL 0
+AVA k
 
 ROOM p
 a,a,a,a,a,a,a,a,a,a,x,x,a,a,a,a
@@ -646,6 +647,52 @@ a,x,x,x,x,x,x,x,x,x,x,x,x,x,x,a
 a,a,a,a,a,a,c,a,a,a,a,a,a,a,a,a
 NAME room boss 2 morto pos dialogo 1
 PAL 0
+AVA k
+
+ROOM q
+a,c,a,a,a,a,c,a,a,a,a,a,a,a,c,a
+a,a,a,a,a,a,a,a,c,a,a,a,a,a,a,a
+a,c,0,0,0,a,0,0,0,0,a,0,0,0,c,a
+c,a,0,0,0,a,0,0,0,0,a,0,0,0,a,c
+a,a,0,0,0,a,0,d,0,0,a,0,0,0,a,a
+a,a,0,m,0,a,0,0,0,0,a,0,0,0,a,a
+c,a,f,e,e,a,e,e,f,e,a,e,e,f,a,c
+c,c,0,0,0,0,0,0,0,0,0,0,0,0,c,a
+a,c,0,0,0,0,0,0,0,0,0,0,0,0,a,a
+a,c,0,0,0,0,0,0,0,0,0,0,0,0,a,a
+a,a,e,e,f,e,a,0,0,a,e,f,e,e,a,c
+a,a,0,0,0,0,a,0,0,a,0,0,0,0,a,a
+a,a,0,0,0,0,a,0,0,a,0,0,0,0,a,c
+a,a,0,0,0,0,a,0,0,a,0,d,0,0,a,a
+a,c,a,c,a,c,a,0,0,a,c,a,a,a,a,a
+a,a,a,a,a,c,c,0,0,c,c,a,a,c,a,a
+NAME room 0 copy 1
+EXT 4,11 0 4,9 DLG spu
+EXT 7,15 1 7,0
+EXT 2,7 4 2,7 FX fade_w DLG spz
+EXT 8,15 1 8,0
+PAL 0
+
+ROOM r
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME room preta 1
+PAL 0
+AVA w
 
 TIL 10
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
@@ -1542,7 +1589,7 @@ SPR A
 0,0,0,1,1,0,0,1,1,1,0,0,1,0,0,0
 0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0
 0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0
-POS 0 2,13
+POS o 8,7
 COL 2
 
 SPR a
@@ -2003,6 +2050,48 @@ SPR u
 NAME mazelinha
 DLG sqk
 POS 2 10,10
+COL 2
+
+SPR v
+0,0,0,0,0,0,8,8,8,8,0,0,0,0,0,0
+0,0,0,8,8,8,0,0,0,0,8,8,8,0,0,0
+0,0,8,0,0,0,0,0,0,0,0,0,0,8,0,0
+0,8,8,9,9,0,0,0,0,0,0,9,9,8,8,0
+0,8,0,8,0,9,9,0,0,9,9,0,8,0,8,0
+0,8,0,0,8,0,0,9,9,0,0,8,0,0,8,0
+8,0,0,0,0,8,9,8,8,9,8,0,0,0,0,8
+8,0,0,0,9,0,8,0,0,8,0,9,0,0,0,8
+8,0,0,9,0,0,0,8,8,0,0,0,9,0,0,8
+8,0,9,0,0,0,9,9,9,9,0,0,0,9,0,8
+0,8,9,9,9,9,0,0,0,0,9,9,9,9,8,0
+0,8,0,0,0,0,8,0,0,8,0,0,0,0,8,0
+0,8,0,0,0,0,9,0,0,9,0,0,0,0,8,0
+0,0,8,0,0,0,0,9,9,0,0,0,0,8,0,0
+0,0,0,8,8,8,0,9,9,0,8,8,8,0,0,0
+0,0,0,0,0,0,8,8,8,8,0,0,0,0,0,0
+NAME placeholder_boss3
+DLG sql
+POS o 9,5
+COL 2
+
+SPR w
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME sprite preto
 COL 2
 
 ITM 1
@@ -2500,7 +2589,7 @@ DLG sqe
 NAME placeholder boss 2 dialog
 
 DLG sqf
-A {clr 8}Dissolução Espiritual{/clr} de Sephyr afeta sua energia, causando {clr 1}8 pontos{/clr} de dano.{hp_evo = hp_evo - 8}
+A {clr 8}Dissolução Espiritual{/clr} de Sethyr afeta sua energia, causando {clr 1}8 pontos{/clr} de dano.{hp_evo = hp_evo - 8}
 NAME ataque boss 2
 
 DLG sqg
@@ -2532,7 +2621,8 @@ Outra {clr 24}lembrança{/clr}. Eu já ouvi aquele som antes.
 Em inocentes gastando seu último sopro clamando por misericórdia, presos para morrer em casas que incendiei.
 Deixei-os arder. Segui adiante.
 {clr 24}Na guerra não havia espaço para arrependimento.{/clr}
-{pg}...{pg}{shk}cavaleiro...{/shk}{pg}{clr 1}Mors{/clr}: {shk}CAVALEIRO!!{/shk}{pg}Você percebe as paredes tremendo, o ambiente ficando frio. Um enorme estrondo anuncia a chegada de uma presença ameaçadora.{exit "p" 8 8}{pg}{clr 1}Mors{/clr}: O que aconteceu? Você tem noção de quanto tempo ficou aí parado?{pg}{clr 1}Mors{/clr}: Estamos sendo encurralados, parece que nós chamamos muita atenção... Sorte sua que minha energia já se recuperou.{pg}{clr 1}Mors{/clr} usa {clr 24}Destruição Espiritual{/clr}...{pg}{exit "o" 8 8 "fade_w"}e o ataque é {shk}bloqueado{/shk}.
+{pg}...{pg}{wvy}{clr 4}...cavaleiro...{/clr}{/wvy}{pg}{clr 1}Mors{/clr}: {shk}CAVALEIRO!!!{/shk}{pg}Você percebe as paredes tremendo, o ambiente ficando frio. Um enorme estrondo anuncia a chegada de uma presença ameaçadora.
+{exit "p" 8 8 "fade_w"}{pg}{clr 1}Mors{/clr}: O que aconteceu? Você tem noção de quanto tempo ficou aí parado?{pg}{clr 1}Mors{/clr}: Estamos sendo encurralados, parece que nós chamamos muita atenção... Sorte sua que minha energia já se recuperou.{pg}{clr 1}Mors{/clr} usa {clr 24}Destruição Espiritual{/clr}...{pg}{exit "o" 8 8 "fade_w"}e o ataque é {shk}bloqueado{/shk}.
 """
 NAME fragmento 2 dialog
 
@@ -2541,8 +2631,18 @@ DLG sqj
 NAME Livro1 dialog
 
 DLG sqk
-Mazelinha: Como eu vim parar aqui meu Deus... Que mazela
+"""
+Mazelinha: Como eu vim parar aqui, meu Deus? 
+Mazelinha: Que mazela...
+"""
 NAME mazelinha
+
+DLG sql
+"""
+Você ataca {clr 8}{wvy}O Cavaleiro{wvy}{/clr}...{pg}Você dá {clr 1}5 pontos{/clr} de dano.{pg}{clr 8}{wvy}O Cavaleiro{/wvy}{/clr} te ataca...
+{pg}{exit "r" 9 9 "fade_b"}E te dá {shk}{clr 8}1000 de dano{/clr}{/shk}.{pg}Você morreu.{pg}{exit "q" 2 13 "fade_w"}
+"""
+NAME placeholder_boss3 dialog
 
 VAR esqueleto1
 24
@@ -54437,6 +54537,7 @@ CHAR 65533
 00000000
 00000000
 </script>
+</script>
 
 <style>
 html {
@@ -54448,7 +54549,7 @@ body {
 	margin:0px;
 	padding:0px;
 	overflow:hidden;
-	background:#000000;
+	background:#ffffff;
 }
 
 #game {
@@ -66137,6 +66238,7 @@ CHAR 9835
 011011
 011000
 000000
+</script>
 </script>
 
 </head>
