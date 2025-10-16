@@ -272,7 +272,7 @@ a,a,a,a,a,c,c,0,0,c,c,a,a,c,a,a
 NAME room 0 dps dos esqueletos
 EXT 8,15 3 8,0
 EXT 7,15 3 7,0
-EXT 2,7 6 2,7 FX fade_w DLG spz
+EXT 2,7 6 3,7 FX fade_w DLG spz
 PAL 0
 
 ROOM 6
@@ -305,7 +305,7 @@ c,a,0,0,0,a,0,0,0,0,a,0,0,0,a,c
 a,a,0,0,0,a,0,d,0,0,a,0,0,0,a,a
 a,a,0,0,0,a,0,0,0,0,a,0,0,0,a,a
 c,a,f,e,e,a,e,e,f,e,a,e,e,f,a,c
-c,c,0,m,0,0,0,0,0,0,0,0,0,0,c,a
+c,c,m,0,0,0,0,0,0,0,0,0,0,0,c,a
 a,c,0,0,0,0,0,0,0,0,0,0,0,0,a,a
 a,c,0,0,0,0,0,0,0,0,0,0,0,0,a,a
 a,a,e,e,f,e,a,0,0,a,e,f,e,e,a,c
@@ -398,7 +398,7 @@ c,x,x,x,c,x,13,0,0,0,0,a,x,13,x,13
 13,x,10,a,c,x,13,0,0,0,0,13,x,a,x,13
 13,x,x,x,c,a,13,0,0,0,0,13,x,x,x,13
 13,x,0,10,a,x,13,0,0,0,0,12,x,10,x,13
-13,x,x,x,13,x,13,13,13,z,g,0,x,a,x,13
+13,x,x,x,13,x,13,13,13,z,1k,0,x,a,x,13
 13,z,x,x,13,x,x,x,x,a,x,x,x,a,x,13
 13,x,x,13,13,x,x,x,x,a,x,x,x,a,x,c
 13,x,a,13,x,x,0,10,a,12,x,10,a,a,x,c
@@ -426,6 +426,10 @@ a,a,0,0,0,0,a,0,0,c,0,d,0,0,a,a
 a,c,a,c,a,c,a,0,0,a,c,a,a,a,a,a
 a,a,a,a,a,c,c,0,0,c,c,a,a,c,a,a
 NAME room 0 loop 3
+ITM d 2,11
+EXT 4,11 12 4,9 DLG srb
+EXT 8,15 13 8,8 FX fade_w DLG src
+EXT 7,15 13 8,8 FX fade_w DLG src
 PAL 3
 
 ROOM 13
@@ -434,18 +438,40 @@ c,x,a,a,12,x,x,x,x,1a,19,1b,x,0,x,13
 c,x,x,x,x,x,a,0,0,1c,1e,1d,0,0,x,13
 13,x,z,x,10,a,12,x,x,x,1f,x,x,0,x,13
 13,x,a,x,a,x,x,x,x,x,1g,x,x,0,x,13
-13,x,12,x,0,x,10,0,0,0,0,0,x,13,x,13
+13,x,12,x,0,x,10,0,0,0,1j,0,x,13,x,13
 13,x,x,x,0,x,13,0,0,0,0,10,x,13,x,13
 13,x,10,a,c,x,13,0,0,0,0,13,x,a,x,13
 12,x,x,x,0,0,13,0,0,0,0,13,x,x,x,13
 z,x,0,10,a,x,13,z,0,0,0,12,x,10,x,13
-13,x,x,x,13,x,0,13,13,z,g,0,x,a,x,13
+13,x,x,x,13,x,0,13,13,z,0,0,x,a,x,13
 13,z,x,x,13,x,x,x,x,a,x,x,x,a,x,13
 13,x,x,13,13,x,x,x,x,a,x,x,x,a,x,13
 13,x,a,13,x,x,0,10,a,12,x,10,a,12,x,c
 a,x,x,x,x,x,x,x,x,x,x,x,x,x,x,c
 a,a,a,a,a,a,c,a,a,a,13,13,13,13,a,c
-NAME room boss 2 morto pós diálogo 2 loop3
+NAME room boss 3 loop 3
+PAL 3
+AVA k
+
+ROOM 14
+13,13,13,13,13,13,12,0,0,0,0,0,0,0,a,a
+c,0,a,a,12,0,0,0,0,0,0,0,0,0,0,13
+c,0,0,0,0,0,a,0,0,0,0,0,0,0,0,13
+13,0,z,0,10,a,12,0,0,0,0,0,0,0,0,13
+13,0,a,0,a,0,0,0,0,0,0,0,0,0,0,13
+13,0,12,0,0,0,10,0,0,0,0,0,0,13,0,13
+13,0,0,0,0,0,13,0,0,0,0,10,0,13,0,13
+13,0,10,a,c,0,13,0,0,0,0,13,0,a,0,13
+12,0,0,0,0,0,13,0,0,0,0,13,0,0,0,13
+z,0,0,10,a,0,13,z,0,0,0,12,0,10,0,13
+13,0,0,0,13,0,0,13,13,z,0,0,0,a,0,13
+13,z,0,0,13,0,0,0,0,a,0,0,0,a,0,13
+13,0,0,13,13,0,0,0,0,a,0,0,0,a,0,13
+13,0,a,13,0,0,0,10,a,12,0,10,a,12,0,c
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,c
+a,a,a,a,a,a,c,a,a,a,13,13,13,13,a,c
+NAME room boss 3 morto
+ITM e 8,7
 PAL 3
 AVA k
 
@@ -686,6 +712,7 @@ ROOM j
 NAME room 7
 EXT 8,0 h 8,15
 EXT 9,0 h 9,15
+EXT 4,10 j 4,10 DLG sqk
 PAL 0
 AVA k
 
@@ -709,6 +736,7 @@ ROOM k
 NAME room 7 dps do exército
 EXT 10,15 l 10,0
 EXT 11,15 l 11,0
+EXT 4,10 k 4,10 DLG srf
 PAL 0
 AVA k
 
@@ -731,9 +759,9 @@ a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
 a,a,a,a,a,a,c,a,a,a,a,a,a,a,a,a
 NAME room boss 2
 ITM 7 14,1
-EXT 1,6 l 1,6 DLG sqf
-EXT 3,14 l 3,14 DLG sqf
-EXT 12,7 l 12,7 DLG sqf
+EXT 2,6 l 2,6 DLG sqf
+EXT 6,14 l 6,14 DLG sqf
+EXT 12,9 l 12,9 DLG sqf
 PAL 0
 AVA k
 
@@ -790,7 +818,7 @@ c,x,x,x,a,x,a,0,0,0,0,a,x,a,x,a
 a,x,a,a,a,x,a,0,0,0,0,a,x,a,x,a
 a,x,x,x,a,a,c,0,0,0,0,a,x,x,x,a
 a,x,a,a,a,x,a,0,0,0,0,a,x,a,x,a
-a,x,x,x,a,x,a,a,a,c,g,a,x,a,x,a
+a,x,x,x,a,x,a,a,a,c,1k,a,x,a,x,a
 a,a,x,x,a,x,x,x,x,a,x,x,x,a,x,a
 a,x,x,a,a,x,x,x,x,a,x,x,x,a,x,a
 a,x,a,a,x,x,a,a,a,a,x,a,a,a,x,a
@@ -986,7 +1014,7 @@ c,x,x,x,c,x,13,0,0,0,0,a,x,13,x,a
 a,x,a,a,c,x,13,0,0,0,0,13,x,a,x,a
 a,x,x,x,c,a,13,0,0,0,0,13,x,x,x,a
 a,x,a,a,a,x,a,0,0,0,0,a,x,a,x,a
-a,x,x,x,a,x,a,a,a,c,g,a,x,a,x,a
+a,x,x,x,a,x,a,a,a,c,1k,a,x,a,x,a
 13,a,x,x,a,x,x,x,x,a,x,x,x,a,x,c
 13,x,x,a,a,x,x,x,x,a,x,x,x,a,x,c
 13,x,a,a,x,x,a,a,a,a,x,a,a,a,x,c
@@ -1015,35 +1043,10 @@ a,c,a,c,a,c,a,0,0,a,c,a,a,a,a,a
 a,a,a,a,a,c,c,0,0,c,c,a,a,c,a,a
 NAME room 0 loop 2
 ITM c 2,11
-EXT 7,15 z 3,8 FX fade_w DLG sr6
-EXT 8,15 z 3,7 DLG sr6
+EXT 7,15 10 10,0 FX fade_w DLG sr6
+EXT 8,15 10 11,0 FX fade_w DLG sr6
 EXT 4,11 y 4,9 DLG sr5
 EXT 4,9 y 4,11
-PAL 2
-
-ROOM z
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-a,a,a,a,a,c,a,a,a,a,c,c,a,a,a,a
-a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,c
-c,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
-a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,1i,1h,0,0,0,0,0,0
-a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
-a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
-c,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
-a,a,a,a,a,a,c,a,a,c,a,a,a,a,c,a
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-NAME room 3 loop2
-EXT 15,7 10 3,2 FX fade_w DLG sr9
-EXT 15,8 10 3,2 FX fade_w DLG sr9
-EXT 8,8 z 8,8 DLG sr8
-EXT 8,8 z 8,8
-EXT 8,8 z 8,8 DLG sr8
 PAL 2
 
 TIL 10
@@ -1481,19 +1484,19 @@ TIL m
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,3,3,3,3,3,3,0,0,0,0,0,0
-0,0,0,3,3,0,0,0,0,3,3,0,0,0,0,0
-0,0,0,3,0,0,0,0,0,0,3,3,0,0,0,0
+0,0,0,0,0,0,3,3,3,3,3,3,0,0,0,0
+0,0,0,0,0,3,3,0,0,0,0,3,3,0,0,0
+0,0,0,0,3,3,0,0,0,0,0,0,3,0,0,0
 0,0,0,0,3,3,0,3,3,0,3,3,0,0,0,0
-0,0,0,0,3,3,0,3,3,0,3,3,3,0,0,0
-0,0,0,3,0,0,0,0,0,0,3,3,3,0,0,0
-0,0,0,3,0,3,3,0,3,3,3,3,3,0,0,0
-0,0,0,3,3,3,3,3,3,3,3,0,3,0,0,0
-0,0,0,0,3,3,3,3,3,3,3,0,0,0,0,0
-0,0,0,3,3,3,3,3,3,3,3,3,0,0,0,0
-0,0,0,3,3,3,3,3,3,3,3,3,0,0,0,0
-0,0,0,0,0,3,3,3,3,3,0,0,0,0,0,0
-0,0,0,0,0,3,3,0,3,3,0,0,0,0,0,0
+0,0,0,3,3,3,0,3,3,0,3,3,0,0,0,0
+0,0,0,3,3,3,0,0,0,0,0,0,3,0,0,0
+0,0,0,3,3,3,3,3,0,3,3,0,3,0,0,0
+0,0,0,3,0,3,3,3,3,3,3,3,3,0,0,0
+0,0,0,0,0,3,3,3,3,3,3,3,0,0,0,0
+0,0,0,0,3,3,3,3,3,3,3,3,3,0,0,0
+0,0,0,0,3,3,3,3,3,3,3,3,3,0,0,0
+0,0,0,0,0,0,3,3,3,3,3,0,0,0,0,0
+0,0,0,0,0,0,3,3,0,3,3,0,0,0,0,0
 NAME mors tile
 COL 1
 
@@ -1725,6 +1728,7 @@ TIL x
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Fantasmas genéricos
+WAL true
 COL 2
 
 TIL y
@@ -1968,6 +1972,27 @@ NAME tile invisivel
 WAL true
 COL 1
 
+TIL 1k
+0,0,0,0,0,0,8,8,8,8,0,0,0,0,0,0
+0,0,0,8,8,8,0,0,0,0,8,8,8,0,0,0
+0,0,8,0,0,0,0,0,0,0,0,0,0,8,0,0
+0,8,8,9,9,0,0,0,0,0,0,9,9,8,8,0
+0,8,0,8,0,9,9,0,0,9,9,0,8,0,8,0
+0,8,0,0,8,0,0,9,9,0,0,8,0,0,8,0
+8,0,0,0,0,8,9,8,8,9,8,0,0,0,0,8
+8,0,0,0,9,0,8,0,0,8,0,9,0,0,0,8
+8,0,0,9,0,0,0,8,8,0,0,0,9,0,0,8
+8,0,9,0,0,0,9,9,9,9,0,0,0,9,0,8
+0,8,9,9,9,9,0,0,0,0,9,9,9,9,8,0
+0,8,0,0,0,0,8,0,0,8,0,0,0,0,8,0
+0,8,0,0,0,0,9,0,0,9,0,0,0,0,8,0
+0,0,8,0,0,0,0,9,9,0,0,0,0,8,0,0
+0,0,0,8,8,8,0,9,9,0,8,8,8,0,0,0
+0,0,0,0,0,0,8,8,8,8,0,0,0,0,0,0
+NAME pentagrama parede
+WAL true
+COL 1
+
 SPR 10
 0,0,0,0,0,6,6,6,6,6,6,6,0,0,0,0
 0,0,0,0,6,6,4,4,4,4,4,6,6,0,0,0
@@ -2161,6 +2186,45 @@ SPR 18
 0,0,0,0,0,0,8,8,8,8,0,0,0,0,0,0
 NAME placeholder boss 3 loop 3
 DLG sr3
+POS 13 8,6
+COL 2
+
+SPR 19
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0
+0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,0
+0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,0
+0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0
+0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,0,0,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,0,0,1,1,1,0,0,0,0
+>
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0
+0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,0
+0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,0
+0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0
+0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0
+0,0,0,0,1,1,1,0,0,1,1,1,0,0,0,0
+NAME mazelinha 2
+POS k 4,12
 COL 2
 
 SPR A
@@ -2198,6 +2262,8 @@ SPR A
 0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0
 0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0
 POS 0 2,13
+ITM 4 1
+ITM 6 1
 COL 2
 
 SPR a
@@ -2218,7 +2284,6 @@ SPR a
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME caveira dan
-POS j 4,12
 COL 2
 
 SPR c
@@ -2266,22 +2331,22 @@ SPR e
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,3,3,3,3,3,3,0,0,0,0,0,0
-0,0,0,3,3,0,0,0,0,3,3,0,0,0,0,0
-0,0,0,3,0,0,0,0,0,0,3,3,0,0,0,0
+0,0,0,0,0,0,3,3,3,3,3,3,0,0,0,0
+0,0,0,0,0,3,3,0,0,0,0,3,3,0,0,0
+0,0,0,0,3,3,0,0,0,0,0,0,3,0,0,0
 0,0,0,0,3,3,0,3,3,0,3,3,0,0,0,0
-0,0,0,0,3,3,0,3,3,0,3,3,3,0,0,0
-0,0,0,3,0,0,0,0,0,0,3,3,3,0,0,0
-0,0,0,3,0,3,3,0,3,3,3,3,3,0,0,0
-0,0,0,3,3,3,3,3,3,3,3,0,3,0,0,0
-0,0,0,0,3,3,3,3,3,3,3,0,0,0,0,0
-0,0,0,1,3,3,3,3,3,3,3,3,0,0,0,0
-0,0,0,1,1,3,3,3,3,3,3,3,0,0,0,0
-0,0,0,0,0,3,3,3,3,3,0,0,0,0,0,0
-0,0,0,0,0,3,3,0,3,3,0,0,0,0,0,0
+0,0,0,3,3,3,0,3,3,0,3,3,0,0,0,0
+0,0,0,3,3,3,0,0,0,0,0,0,3,0,0,0
+0,0,0,3,3,3,3,3,0,3,3,0,3,0,0,0
+0,0,0,3,0,3,3,3,3,3,3,3,3,0,0,0
+0,0,0,0,0,3,3,3,3,3,3,3,0,0,0,0
+0,0,0,0,3,3,3,3,3,3,3,3,1,0,0,0
+0,0,0,0,3,3,3,3,3,3,3,1,1,0,0,0
+0,0,0,0,0,0,3,3,3,3,3,0,0,0,0,0
+0,0,0,0,0,0,3,3,0,3,3,0,0,0,0,0
 NAME mors sprite
 DLG spv
-POS 6 3,7
+POS 6 2,7
 COL 2
 
 SPR f
@@ -2574,7 +2639,6 @@ SPR r
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME caveira dan 2
-POS k 4,12
 COL 2
 
 SPR s
@@ -2657,7 +2721,7 @@ SPR u
 0,0,0,0,1,1,1,0,0,1,1,1,0,0,0,0
 NAME mazelinha original
 DLG sqk
-POS 2 10,10
+POS j 4,12
 COL 2
 
 SPR v
@@ -2866,7 +2930,6 @@ ITM 4
 0,0,0,12,12,12,12,12,12,12,12,12,12,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Livro1
-DLG sqj
 COL 2
 
 ITM 5
@@ -3036,6 +3099,48 @@ NAME chave loop 2
 DLG sr4
 COL 2
 
+ITM d
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,10,10,10,0,0,0,0,0,0,0,0,0,0
+0,0,0,10,0,10,0,0,0,0,0,0,0,0,0,0
+0,0,0,10,10,10,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,10,0,10,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME chave loop 3
+DLG sra
+COL 2
+
+ITM e
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,15,15,15,0,0,0,0,0,0
+0,0,0,0,0,0,15,24,24,24,15,0,0,0,0,0
+0,0,0,0,0,15,24,24,24,24,24,15,0,0,0,0
+0,0,0,0,0,15,24,24,24,24,24,15,0,0,0,0
+0,0,0,0,0,15,24,24,2,24,24,15,0,0,0,0
+0,0,0,0,0,15,24,24,24,2,24,15,0,0,0,0
+0,0,0,0,0,15,24,24,24,24,24,15,0,0,0,0
+0,0,0,0,0,0,15,24,24,24,15,0,0,0,0,0
+0,0,0,0,0,0,0,15,15,15,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME fragmento 3
+DLG sre
+COL 2
+
 DLG DRAWINGSIZE
 16
 
@@ -3053,12 +3158,12 @@ DLG spu
     {rbw}Novo objetivo:{/rbw} Encontre a chave para libertar a prisioneira.
   - else ?
     {property locked true}O portão está trancado...
-} 
+}
 """
 NAME locked exit 1
 
 DLG spv
-???: Ufa! Parecia que eu ia ficar ali pra sempre...{pg}???: Obrigada, Cavaleiro. Eu sou a {clr 1}Mors{/clr}.{pg}{clr 1}Mors:{/clr} Só temos um probleminha... não sei onde colocaram minha foice.{pg}{rbw}Novo objetivo:{/rbw} Encontre a foice de Mors.{pg}{clr 1}Mors:{/clr} Aliás, leve este livro  com você, Cavaleiro.{item "4" 1}{pg}{exit "7" 2 7}Você recebeu o {clr 14}Livro de Feitiços{/clr}!{pg}{exit "6" 2 7}{clr 1}Mors:{/clr} Neste livro tem alguns feitiços que podem ser úteis pra você, infelizmente muitos estão protegidos com magia e não podem ser lidos.{pg}{clr 1}Mors:{/clr} Mas talvez eu possa te ajudar com isso, só um momento...{pg}{clr 1}Mors{/clr} reune {clr 8}Magia{/clr} em suas mãos e a libera no seu livro.{pg}{clr 1}Mors:{/clr} Pronto, acho que deu certo. Um {clr 8}feitiço de abertura{/clr} parece ter sido liberado, teste da próxima vez que você encontrar uma passagem bloqueada por {clr 8}Magia{/clr}.
+???: Ufa! Parecia que eu ia ficar ali pra sempre...{pg}???: Obrigada, Cavaleiro. Muito prazer, eu sou a {clr 1}Mors{/clr}.{pg}{clr 1}Mors:{/clr} Só temos um probleminha... não sei onde colocaram minha foice.{pg}{rbw}Novo objetivo:{/rbw} Encontre a foice de Mors.{pg}{clr 1}Mors:{/clr} Aliás, leve este livro  com você, Cavaleiro.{item "4" 1}{pg}{exit "7" 3 7}Você recebeu o {clr 14}Livro de Feitiços{/clr}!{pg}{exit "6" 3 7}{clr 1}Mors:{/clr} Neste livro tem alguns feitiços que podem ser úteis pra você, infelizmente muitos estão protegidos com magia e não podem ser lidos.{pg}{clr 1}Mors:{/clr} Mas talvez eu possa te ajudar com isso, só um momento...{pg}{clr 1}Mors{/clr} reune {clr 8}Magia{/clr} em suas mãos e a libera no seu livro.{pg}{clr 1}Mors:{/clr} Pronto, acho que deu certo. Um {clr 8}feitiço de abertura{/clr} parece ter sido liberado, teste da próxima vez que você encontrar uma passagem bloqueada por {clr 8}Magia{/clr}.
 NAME morteSemFoice dialog
 
 DLG spy
@@ -3076,7 +3181,7 @@ DLG spz
 """
 {
   - {item "chaveMors"} >= 1 ?
-    {property locked false}A chave abriu a porta da prisioneira!{exit "6" 2 7 "fade_w"}
+    {property locked false}A chave abriu a porta da prisioneira!{exit "6" 3 7 "fade_w"}
   - else ?
     {property locked true}???: Acho que vi uns esqueletos com a chave da minha cela...
 }
@@ -3091,20 +3196,20 @@ DLG sq1
 """
 Você ataca os {wvy}esqueletos{wvy}.{pg}{shuffle
   - Você erra.
-  - Você dá {clr 1}4 pontos{/clr} de dano.{esqueleto1 = esqueleto1 - 4}
-  - Você dá {clr 1}10 pontos{/clr} de dano.{esqueleto1 = esqueleto1 - 10}
-  - Você dá {clr 1}6 pontos {/clr}de dano.{esqueleto1 = esqueleto1 - 6}
-  - Você dá {clr 1}8 pontos {/clr}de dano.{esqueleto1 = esqueleto1 - 8}
-  - Crítico! Você dá {clr 1}14 pontos{/clr} de dano.{esqueleto1 = esqueleto1 - 14}
+  - Você dá {clr 9}4 pontos{/clr} de dano.{esqueleto1 = esqueleto1 - 4}
+  - Você dá {clr 9}10 pontos{/clr} de dano.{esqueleto1 = esqueleto1 - 10}
+  - Você dá {clr 9}6 pontos {/clr}de dano.{esqueleto1 = esqueleto1 - 6}
+  - Você dá {clr 9}8 pontos {/clr}de dano.{esqueleto1 = esqueleto1 - 8}
+  - Crítico! Você dá {clr 9}14 pontos{/clr} de dano.{esqueleto1 = esqueleto1 - 14}
 }{
   - {esqueleto1} < 1 ?
     {pg}Você matou os {wvy}esqueletos!{wvy}{exit "3" 2 7 "fade_w"}
   - else ?
     {pg}Os {wvy}esqueletos{wvy} te atacam...{pg}{shuffle
       - E erram.
-      - E te dão {clr 1}4 pontos{/clr} de dano!{hp = hp - 4}
-      - E te dão {clr 1}7 pontos{/clr} de dano!{hp = hp - 7}
-      - E te dão {clr 1}9 pontos{/clr} de dano!{hp = hp - 9}
+      - E te dão {clr 9}4 pontos{/clr} de dano!{hp = hp - 4}
+      - E te dão {clr 9}7 pontos{/clr} de dano!{hp = hp - 7}
+      - E te dão {clr 9}9 pontos{/clr} de dano!{hp = hp - 9}
     }{
       - {hp} < 1 ?
         {pg}Você morreu...{pg}{end}Boa sorte na próxima.
@@ -3128,25 +3233,26 @@ DLG sq4
 """
 Você ataca {wvy}Ghorr, o aniquilador{/wvy}...{pg}{shuffle
   - E erra.
-  - Você dá {clr 1}8 pontos{/clr} de dano.{placeholder_boss1 = placeholder_boss1 - 8}
-  - Você dá {clr 1}10 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 10}
-  - Você dá {clr 1}7 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 7}
-  - Você dá {clr 1}8 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 8}
-  - Você dá {clr 1}7 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 7}
-  - Você dá {clr 1}8 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 8}
-  - Crítico! Você dá {clr 1}15 pontos{/clr} de dano.{placeholder_boss1 = placeholder_boss1 - 15}
+  - Você dá {clr 9}8 pontos{/clr} de dano.{placeholder_boss1 = placeholder_boss1 - 8}
+  - Você dá {clr 9}10 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 10}
+  - Você dá {clr 9}7 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 7}
+  - Você dá {clr 9}8 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 8}
+  - Você dá {clr 9}7 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 7}
+  - Você dá {clr 9}8 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 8}
+  - Você dá {clr 9}9 pontos{/clr} de dano.{placeholder_boss1 = placeholder_boss1 - 9}
+  - Crítico! Você dá {clr 9}15 pontos{/clr} de dano.{placeholder_boss1 = placeholder_boss1 - 15}
 }{
   - {placeholder_boss1} < 1 ?
     {pg}Você matou {wvy}Ghorr{wvy}!
     {exit "a" 8 8 "fade_w"}
   - else ?
     {pg}{wvy}Ghorr{wvy} te ataca...{pg}{shuffle
-      - E te dá {clr 1}6 pontos{/clr} de dano!{hp = hp - 6}
-      - E te dá {clr 1}8 pontos{/clr} de dano!{hp = hp - 8}
-      - E te dá {clr 1}7 pontos{/clr} de dano!{hp = hp - 7}
-      - E te dá {clr 1}6 pontos{/clr} de dano!{hp = hp - 6}
-      - Crítico! Você recebeu {clr 1}10 pontos{/clr} de dano!{hp = hp - 10}
-      - E suga parte do seu espírito, recuperando {clr 1}4 pontos{/clr} de vida!{hp = hp - 4}{placeholder_boss1 = placeholder_boss1 + 4}
+      - E te dá {clr 9}14 pontos{/clr} de dano!{hp = hp - 14}
+      - E te dá {clr 9}12 pontos{/clr} de dano!{hp = hp - 12}
+      - E te dá {clr 9}16 pontos{/clr} de dano!{hp = hp - 16}
+      - E te dá {clr 9}14 pontos{/clr} de dano!{hp = hp - 14}
+      - Crítico! Você recebeu {clr 9}20 pontos{/clr} de dano!{hp = hp - 20}
+      - E suga parte do seu espírito, recuperando {clr 8}8 pontos{/clr} de vida!{hp = hp - 8}{placeholder_boss1 = placeholder_boss1 + 8}
     }{
       - {hp} < 1 ?
         {pg}Você morreu...{pg}{end}Boa sorte na próxima.
@@ -3173,17 +3279,6 @@ DLG sq6
 {clr 1}Mors:{/clr} Vejo que conseguiu recuperar minha foice. Sendo sincera, eu achei que você não ia conseguir derrotar aquele esqueleto.{pg}{exit "c" 12 9}Você entrega a foice para {clr 1}Mors{/clr}...{pg}{clr 1}Mors: {/clr} Obrigada, Cavaleiro. De verdade.{pg}{clr 1}Mors:{/clr} Aceite isso como agradecimento...{pg}{clr 1}Mors{/clr} canaliza {clr 8}Magia{/clr} em sua foice e a aplica em você.{pg}{ava "j"}{clr 1}Mors:{/clr} Agora sim, isso deve te deixar um pouco mais forte.{pg}{clr 1}Mors:{/clr} Agora que estamos prontos, vamos dar um jeito de sair daqui. Parece ter um caminho logo ali...{pg}{clr 1}Mors{/clr} brande sua foice e revela uma passagem escondida.{pg}{exit "d" 12 9 "fade_w"}{ava "j"}{clr 1}Mors:{/clr} Pronto, podemos seguir. Dessa vez eu vou poder estar te acompanhando e agir caso necessário.{pg}{exit "f" 12 9}{ava "k"}{clr 1}Mors{/clr} se uniu à sua aventura!
 NAME mors pós foice
 
-DLG sq8
-"""
-{
-  - {item "Livro1"} >= 1 ?
-    {property locked false}Você usa o feitiço de abertura na passagem.
-  - else ?
-    {property locked true}Um feitiço está bloqueando essa passagem...
-}
-"""
-NAME dialogo pentagramas futuros
-
 DLG sq9
 Você encontrou uma página para o seu {clr 14}Livro de Feitiços{/clr}.{pg}{clr 1}Mors:{/clr} Parece que a página que você encontrou libera mais um feitiço no livro... dessa vez parece ser um feitiço de {clr 24}Unção{/clr}. Pode ser útil depois.
 NAME página livro dialog
@@ -3198,23 +3293,23 @@ DLG sqb
   - {item "página livro"} >= 1 ?
     Você ataca os {wvy}fantasmas{wvy}...{pg}{shuffle
       - Você erra.
-      - Você dá {clr 1}7{/clr} pontos de dano.{fantasmas1 = fantasmas1 - 7}
-      - Mors ataca os fantasmas, dando {clr 1}8{/clr} pontos de dano.{fantasmas1 = fantasmas1 - 8}
-      - Você dá {clr 1}9{/clr} pontos de dano.{fantasmas1 = fantasmas1 - 9}
-      - Mors usa sua foice para sugar energia espiritual dos fantasmas, dando {clr 1}6{/clr} pontos de dano e recuperando 6 dos seus pontos de vida.{fantasmas1 = fantasmas1 - 6}{hp_evo = hp_evo + 6}
-      - Você dá {clr 1}10{/clr} pontos de dano.{fantasmas1 = fantasmas1 - 10}
-      - Você dá {clr 1}12{/clr} pontos de dano.{fantasmas1 = fantasmas1 - 12}
-      - Crítico! Você dá {clr 1}18{/clr} pontos de dano.{fantasmas1 = fantasmas1 - 18}
+      - Você dá {clr 9}7{/clr} pontos de dano.{fantasmas1 = fantasmas1 - 7}
+      - Mors ataca os fantasmas, dando {clr 9}8{/clr} pontos de dano.{fantasmas1 = fantasmas1 - 8}
+      - Você dá {clr 9}9{/clr} pontos de dano.{fantasmas1 = fantasmas1 - 9}
+      - Mors usa sua foice para sugar energia espiritual dos fantasmas, dando {clr 9}6{/clr} pontos de dano e recuperando 6 dos seus pontos de vida.{fantasmas1 = fantasmas1 - 6}{hp_evo = hp_evo + 6}
+      - Você dá {clr 9}10{/clr} pontos de dano.{fantasmas1 = fantasmas1 - 10}
+      - Você dá {clr 9}12{/clr} pontos de dano.{fantasmas1 = fantasmas1 - 12}
+      - Crítico! Você dá {clr 9}18{/clr} pontos de dano.{fantasmas1 = fantasmas1 - 18}
     }{
       - {fantasmas1} < 1 ?
         {pg}Você matou os {wvy}fantasmas{wvy}!{exit "i" 9 12 "fade_w"}
       - else ?
         {pg}Os {wvy}fantasmas{wvy} te atacam...{pg}{shuffle
           - E erram.
-          - E te dão {clr 1}6 pontos{/clr} de dano!{hp_evo = hp_evo - 6}
-          - E te dão {clr 1}8 pontos{/clr} de dano!{hp_evo = hp_evo - 8}
-          - E te dão {clr 1}10 pontos{/clr} de dano!{hp_evo = hp_evo - 10}
-          - Crítico! Os fantasmas te dão {clr 1}12 pontos{/clr} de dano!{hp_evo = hp_evo - 12}
+          - E te dão {clr 9}6 pontos{/clr} de dano!{hp_evo = hp_evo - 6}
+          - E te dão {clr 9}8 pontos{/clr} de dano!{hp_evo = hp_evo - 8}
+          - E te dão {clr 9}10 pontos{/clr} de dano!{hp_evo = hp_evo - 10}
+          - Crítico! Os fantasmas te dão {clr 9}12 pontos{/clr} de dano!{hp_evo = hp_evo - 12}
         }{
           - {hp_evo} < 1 ?
             {pg}Você morreu...{pg}{end}Boa sorte na próxima.
@@ -3227,10 +3322,10 @@ DLG sqb
     Seus ataques são incapazes de atingir os fantasmas.
     {pg}Os {wvy}fantasmas{wvy} te atacam...{pg}{shuffle
       - E erram.
-      - E te dão {clr 1}6 pontos{/clr} de dano!{hp_evo = hp_evo - 6}
-      - E te dão {clr 1}8 pontos{/clr} de dano!{hp_evo = hp_evo - 8}
-      - E te dão {clr 1}10 pontos{/clr} de dano!{hp_evo = hp_evo - 10}
-      - Crítico! Os fantasmas te dão {clr 1}12 pontos{/clr} de dano!{hp_evo = hp_evo - 12}
+      - E te dão {clr 8}7 pontos{/clr} de dano!{hp_evo = hp_evo - 6}
+      - E te dão {clr 8}9 pontos{/clr} de dano!{hp_evo = hp_evo - 8}
+      - E te dão {clr 8}11 pontos{/clr} de dano!{hp_evo = hp_evo - 10}
+      - Crítico! Os fantasmas te dão {clr 8}13 pontos{/clr} de dano!{hp_evo = hp_evo - 12}
     }{
       - {hp_evo} < 1 ?
         {pg}Você morreu...{pg}{end}Boa sorte na próxima.
@@ -3248,22 +3343,22 @@ DLG sqc
   - {item "página livro"} >= 1 ?
     Você ataca o {wvy}exército de fantasmas{wvy}...{pg}{shuffle
       - Você erra.
-      - Você dá {clr 1}7 pontos{/clr} de dano.{fantasmas2 = fantasmas2 - 7}
-      - Mors ataca os fantasmas, dando {clr 1}8 pontos{/clr} de dano.{fantasmas2 = fantasmas2 - 8}
-      - Você dá {clr 1}9 pontos{/clr} de dano.{fantasmas2 = fantasmas2 - 9}
-      - Mors usa sua foice para sugar energia espiritual dos fantasmas, dando {clr 1}6 pontos{/clr} de dano e recuperando 6 dos seus pontos de vida.{fantasmas2 = fantasmas2 - 6}{hp_evo = hp_evo + 6}
-      - Você dá {clr 1}10 pontos{/clr} de dano.{fantasmas2 = fantasmas2 - 10}
-      - Você dá {clr 1}12 pontos{/clr} de dano.{fantasmas2 = fantasmas2 - 12}
-      - Crítico! Você dá {clr 1}18 pontos{/clr} de dano.{fantasmas2 = fantasmas2 - 18}
+      - Você dá {clr 9}7 pontos{/clr} de dano.{fantasmas2 = fantasmas2 - 7}
+      - Mors ataca os fantasmas, dando {clr 9}8 pontos{/clr} de dano.{fantasmas2 = fantasmas2 - 8}
+      - Você dá {clr 9}9 pontos{/clr} de dano.{fantasmas2 = fantasmas2 - 9}
+      - Mors usa sua foice para sugar energia espiritual dos fantasmas, dando {clr 9}6 pontos{/clr} de dano e recuperando 6 dos seus pontos de vida.{fantasmas2 = fantasmas2 - 6}{hp_evo = hp_evo + 6}
+      - Você dá {clr 9}10 pontos{/clr} de dano.{fantasmas2 = fantasmas2 - 10}
+      - Você dá {clr 9}12 pontos{/clr} de dano.{fantasmas2 = fantasmas2 - 12}
+      - Crítico! Você dá {clr 9}18 pontos{/clr} de dano.{fantasmas2 = fantasmas2 - 18}
     }{
       - {fantasmas2} < 1 ?
         {pg}Você matou o {wvy}exército de fantasmas{wvy}!{exit "k" 10 8 "fade_w"}{pg}{clr 1}Mors{/clr}: Isso gastou uma quantia enorme de magia mas pelo menos vamos conseguir continuar... Gastei uma quantia extra para recuperar nossa própria energia espiritual, podemos seguir em frente.
       - else ?
         {pg}O {wvy} exército de fantasmas{wvy} te ataca...{pg}{shuffle
-          - E te dão {clr 1}30 pontos{/clr} de dano!{hp_evo = hp_evo - 30}
+          - E te dão {clr 9}30 pontos{/clr} de dano!{hp_evo = hp_evo - 30}
         }{
           - {hp_evo} < 80 ?
-            {pg}{clr 1}Mors:{/clr} Nesse ritmo seremos derrotados...{pg}{clr 1}Mors:{/clr} Eu preciso tentar algo...{pg}{clr 1}Mors:{/clr} Isso vai gastar uma quantia enorme de magia, mas pelo menos vamos conseguir continuar...{pg}{clr 1}Mors{/clr} concentra energia em sua foice...{pg}{clr 1}Mors{/clr} usa {clr 24}Destruição Espiritual{/clr}, dando {clr 8}500 pontos de dano{/clr} e recuperando seu HP ao máximo{/clr}!{fantasmas2 = fantasmas2 - 500}{hp_evo = 125}{hp = 100}{pg}Você matou o {wvy}exército de fantasmas{wvy}!{exit "k" 10 8 "fade_w"}
+            {pg}{clr 1}Mors:{/clr} Nesse ritmo seremos derrotados...{pg}{clr 1}Mors:{/clr} Eu preciso tentar algo...{pg}{clr 1}Mors:{/clr} Isso vai gastar uma quantia enorme de magia, mas pelo menos vamos conseguir continuar...{pg}{clr 1}Mors{/clr} concentra energia em sua foice...{pg}{clr 1}Mors{/clr} usa {clr 24}Destruição Espiritual{/clr}, dando {clr 9}500 pontos de dano{/clr} e recuperando seu HP ao máximo!{fantasmas2 = fantasmas2 - 500}{hp_evo = 125}{hp = 100}{pg}Você matou o {wvy}exército de fantasmas{wvy}!{exit "k" 10 8 "fade_w"}
           - else ?
             {pg}Você tem {say hp_evo} HP restantes.
             O {wvy}exército de fantasmas{wvy} tem {say fantasmas2} HP restantes.
@@ -3272,7 +3367,7 @@ DLG sqc
   - else ?
     Seus ataques são incapazes de atingir os fantasmas.
     {pg}O {wvy}exército de fantasmas{wvy} te ataca...{pg}{shuffle
-      - E te dão {clr 1}30 pontos{/clr} de dano!{hp_evo = hp_evo - 30}
+      - E te dão {clr 9}30 pontos{/clr} de dano!{hp_evo = hp_evo - 30}
     }{
       - {hp_evo} < 80 ?
         {pg}{clr 1}Mors{/clr}:Nesse ritmo seremos derrotados...{pg}Eu preciso tentar algo...{pg}{clr 1}Mors:{/clr} Isso vai gastar uma quantia enorme de magia, mas pelo menos vamos conseguir continuar...{pg}{clr 1}Mors{/clr} concentra energia em sua foice...{pg}{clr 1}Mors{/clr} usa {clr 24}Destruição Espiritual{/clr}, dando {clr 8}500 pontos de dano{/clr} e recuperando seu HP ao máximo{/clr}!{fantasmas2 = fantasmas2 - 500}{hp_evo = 125}{hp = 100}{pg}Você matou o {wvy} exército de fantasmas{wvy}!{exit "k" 10 8 "fade_w"}
@@ -3294,24 +3389,24 @@ DLG sqe
   - {item "página livro"} >= 1 ?
     Você ataca {wvy}Sethyr{wvy}...{pg}{shuffle
       - Você erra.
-      - Você dá {clr 1}7 pontos{/clr} de dano.{placeholder_boss2 = placeholder_boss2 - 7}
-      - {clr 1}Mors{/clr} usa sua foice, dando {clr 1}8 pontos{/clr} de dano.{placeholder_boss2 = placeholder_boss2 - 8}
-      - Você dá {clr 1}9 pontos{/clr} de dano.{placeholder_boss2 = placeholder_boss2 - 9}
-      - {clr 1}Mors{/clr} usa sua foice para sugar energia espiritual de Sethyr, porém está com pouca energia e causa apenas {clr 1}3 pontos {/clr} de dano, recuperando 3 dos seus pontos de vida.{placeholder_boss2 = placeholder_boss2 - 3}{hp_evo = hp_evo + 3}
-      - Você dá {clr 1}10 pontos{/clr} de dano.{placeholder_boss2 = placeholder_boss2 - 10}
-      - Você dá {clr 1}12 pontos{/clr} de dano.{placeholder_boss2 = placeholder_boss2 - 12}
-      - Crítico! Você dá {clr 1}18 pontos{/clr} de dano.{placeholder_boss2 = placeholder_boss2 - 18}
+      - Você dá {clr 9}7 pontos{/clr} de dano.{placeholder_boss2 = placeholder_boss2 - 7}
+      - {clr 1}Mors{/clr} usa sua foice, dando {clr 9}8 pontos{/clr} de dano.{placeholder_boss2 = placeholder_boss2 - 8}
+      - Você dá {clr 9}9 pontos{/clr} de dano.{placeholder_boss2 = placeholder_boss2 - 9}
+      - {clr 1}Mors{/clr} usa sua foice para sugar energia espiritual de Sethyr, porém está com pouca energia e causa apenas {clr 9}3 pontos {/clr} de dano, recuperando 3 dos seus pontos de vida.{placeholder_boss2 = placeholder_boss2 - 3}{hp_evo = hp_evo + 3}
+      - Você dá {clr 9}10 pontos{/clr} de dano.{placeholder_boss2 = placeholder_boss2 - 10}
+      - Você dá {clr 9}12 pontos{/clr} de dano.{placeholder_boss2 = placeholder_boss2 - 12}
+      - Crítico! Você dá {clr 9}18 pontos{/clr} de dano.{placeholder_boss2 = placeholder_boss2 - 18}
     }{
       - {placeholder_boss2} < 1 ?
         {pg}Você matou {wvy}Sethyr{wvy}!{exit "m" 9 3 "fade_w"}
       - else ?
         {pg}{wvy}Sethyr{wvy} te ataca...{pg}{shuffle
-          - E te dá {clr 1}6 pontos{/clr} de dano!{hp_evo = hp_evo - 6}
-          - E te dá {clr 1}6 pontos{/clr} de dano!{hp_evo = hp_evo - 6}
-          - E te dá {clr 1}6 pontos{/clr} de dano!{hp_evo = hp_evo - 6}
-          - E te dá {clr 1}8 pontos{/clr} de dano!{hp_evo = hp_evo - 8}
-          - E te dá {clr 1}10 pontos{/clr} de dano!{hp_evo = hp_evo - 10}
-          - Crítico! Sethyr te dá {clr 1}15 pontos{/clr} de dano!{hp_evo = hp_evo - 15}
+          - E te dá {clr 9}8 pontos{/clr} de dano!{hp_evo = hp_evo - 8}
+          - E te dá {clr 9}8 pontos{/clr} de dano!{hp_evo = hp_evo - 8}
+          - E te dá {clr 9}8 pontos{/clr} de dano!{hp_evo = hp_evo - 8}
+          - E te dá {clr 9}9 pontos{/clr} de dano!{hp_evo = hp_evo - 9}
+          - E te dá {clr 9}12 pontos{/clr} de dano!{hp_evo = hp_evo - 12}
+          - Crítico! Sethyr te dá {clr 9}16 pontos{/clr} de dano!{hp_evo = hp_evo - 16}
         }{
           - {hp_evo} < 1 ?
             {pg}Você morreu...{pg}{end}Boa sorte na próxima.
@@ -3324,12 +3419,12 @@ DLG sqe
     Seus ataques são incapazes de atingir os fantasmas.
     {pg}{wvy}Sethyr{wvy} te ataca...{pg}{shuffle
       - E erra.
-      - E te dá {clr 1}6 pontos{/clr} de dano!{hp_evo = hp_evo - 6}
-      - E te dá {clr 1}6 pontos{/clr} de dano!{hp_evo = hp_evo - 6}
-      - E te dá {clr 1}6 pontos{/clr} de dano!{hp_evo = hp_evo - 6}
       - E te dá {clr 1}8 pontos{/clr} de dano!{hp_evo = hp_evo - 8}
-      - E te dá {clr 1}10 pontos{/clr} de dano!{hp_evo = hp_evo - 10}
-      - Crítico! Sethyr te dão {clr 1}15 pontos{/clr} de dano!{hp_evo = hp_evo - 12}
+      - E te dá {clr 1}8 pontos{/clr} de dano!{hp_evo = hp_evo - 8}
+      - E te dá {clr 1}8 pontos{/clr} de dano!{hp_evo = hp_evo - 8}
+      - E te dá {clr 1}9 pontos{/clr} de dano!{hp_evo = hp_evo - 9}
+      - E te dá {clr 1}12 pontos{/clr} de dano!{hp_evo = hp_evo - 12}
+      - Crítico! Sethyr te dá {clr 1}16 pontos{/clr} de dano!{hp_evo = hp_evo - 16}
     }{
       - {hp_evo} < 1 ?
         {pg}Você morreu...{pg}{end}Boa sorte na próxima.
@@ -3375,15 +3470,9 @@ Em inocentes gastando seu último sopro clamando por misericórdia, presos para 
 Deixei-os arder. Segui adiante.
 {clr 24}Na guerra não havia espaço para arrependimento.{/clr}
 {pg}...{pg}{wvy}{clr 4}...cavaleiro...{/clr}{/wvy}{pg}{clr 1}Mors:{/clr} {shk}CAVALEIRO!!!{/shk}{pg}Você percebe as paredes tremendo, e o ambiente esfriando. Um enorme estrondo anuncia a chegada de uma presença ameaçadora.
-{exit "p" 8 8 "fade_w"}{clr 1}Mors:{/clr} O que aconteceu? Você tem noção de quanto tempo ficou aí parado?{pg}{clr 1}Mors:{/clr} Estamos sendo encurralados, parece que nós chamamos muita atenção... Sorte sua que minha energia já se recuperou.{pg}{clr 1}Mors{/clr} usa {clr 24}Destruição Espiritual{/clr}...{exit "o" 8 8 "fade_w"}E o ataque é {shk}bloqueado{/shk}.{pg}{end}Volte amanhã para o Capítulo 3!
-Obrigado por Jogar {rbw}<3{/rbw}
-- Bia e Dan
+{exit "p" 8 8 "fade_w"}{clr 1}Mors:{/clr} O que aconteceu? Você tem noção de quanto tempo ficou aí parado?{pg}{clr 1}Mors:{/clr} Estamos sendo encurralados, parece que nós chamamos muita atenção... Sorte sua que minha energia já se recuperou.{pg}{clr 1}Mors{/clr} usa {clr 24}Destruição Espiritual{/clr}...{exit "o" 8 8 "fade_w"}E o ataque é {shk}bloqueado{/shk}.
 """
 NAME fragmento 2 dialog
-
-DLG sqj
-
-NAME Livro1 dialog
 
 DLG sqk
 """
@@ -3394,13 +3483,13 @@ NAME mazelinha
 
 DLG sql
 """
-Você ataca {clr 8}{wvy}O Cavaleiro{wvy}{/clr}...{pg}Você dá {clr 1}5 pontos{/clr} de dano.{pg}{clr 8}{wvy}O Cavaleiro{/wvy}{/clr} te ataca...
-{pg}{exit "r" 9 9 "fade_b"}E te dá {shk}{clr 8}1000 de dano{/clr}{/shk}.{pg}Você morreu.{pg}{exit "q" 2 13 "fade_w"}
+Você ataca {clr 8}{wvy}O Cavaleiro{wvy}{/clr}...{pg}Você dá {clr 8}5 pontos{/clr} de dano.{pg}{clr 8}{wvy}O Cavaleiro{/wvy}{/clr} te ataca...
+{pg}{exit "r" 9 9 "fade_b"}E te dá {shk}{clr 8}1000 pontos de dano{/clr}{/shk}.{pg}Você morreu.{pg}{exit "q" 2 13 "fade_w"}
 """
 NAME placeholder_boss3 dialog
 
 DLG sqm
-Mazelinha: Oxente, tu de novo aqui?
+Mazelinha: Oxente, tu tá me seguindo?
 NAME mazelinha 1 dialog
 
 DLG sqn
@@ -3432,10 +3521,10 @@ Você ataca {wvy}Ghorr, o aniquilador{/wvy}...{pg}{shuffle
   - Crítico! Você dá {clr 1}45 pontos{/clr} de dano.{placeholder_boss1 = placeholder_boss1 - 45}
 }{
   - {placeholder_boss1} < 1 ?
-    {pg}{exit "r" 7 7 "fade_b"}Você matou {wvy}Ghorr{wvy}!{pg}(BIA COLOQUE O DIALOGO AQ!!){exit "u" 7 0}
+    {pg}{exit "r" 7 7 "fade_b"}Você matou {wvy}Ghorr{wvy}!{pg}Os inimigos não são mais tão desafiadores pra mim.{exit "u" 7 0 "fade_w"}
   - else ?
     {pg}{wvy}Ghorr{wvy} te ataca...{pg}{shuffle
-      - E te dá {clr 1}5 pontos{/clr} de dano!{hp_loop1 = hp_loop1 - 5}
+      - E te dá {clr 1}6 pontos{/clr} de dano!{hp_loop1 = hp_loop1 - 6}
     }{
       - {hp_loop1} < 1 ?
         {pg}Você morreu...{pg}{end}Boa sorte na próxima.
@@ -3450,19 +3539,6 @@ NAME placeholder boss 1 loop 1 dialog
 DLG sqr
 Ghorr me aguarda novamente...{placeholder_boss1 = 70}
 NAME exit narration 3
-
-DLG sqs
-"""
-{
-  - {item "1"} >= 1 ?
-    {property locked false}
-    The key opens the door!
-  - else ?
-    {property locked true}
-    The door is locked...
-}
-"""
-NAME locked exit 3
 
 DLG sqt
 A {clr 8}Dissolução Espiritual{/clr} de Sethyr não te atinge.
@@ -3524,57 +3600,42 @@ Você ataca {clr 8}{wvy}O Cavaleiro{wvy}{/clr}...{pg}Você dá {clr 1}75 pontos{
 NAME boss3 loop1
 
 DLG sqx
-O {wvy}exército de fantasmas{wvy} te ataca...{pg}E você bloqueia.{pg}{clr 1}Mors{/clr} usa Destruição Espiritual e causa 500 pontos de dano!{pg}{exit "r" 0 0 "fade_w"}Enfrentar o Sethyr novamente vai ser mais fácil.{pg}{exit "w" 3 3 "fade_w"}
+O {wvy}exército de fantasmas{wvy} te ataca...{pg}E você bloqueia.{pg}{clr 1}Mors{/clr} usa {clr 8}Destruição Espiritual{/clr} e causa 500 pontos de dano!{pg}{exit "r" 0 0 "fade_w"}Enfrentar o Sethyr novamente vai ser mais fácil.{pg}{exit "w" 3 3 "fade_w"}
 NAME fantasmaloop1 dialog
 
 DLG sqy
- A {clr 8}Dissolução Espiritual{/clr} do...{pg}{shk}{clr 8}Cavaleiro{/clr}{/shk}{pg}causa 10 pontos de dano em {wvy}Sethyr{/wvy}.
+A {shk}sua{/shk} {clr 8}Dissolução Espiritual{/clr} causa 10 pontos de dano em {wvy}Sethyr{/wvy}.
 NAME ataque boss 2 loop 2
 
 DLG sqz
-Você não é mais afetado pela armadilha de Sethyr.{pg}Mors usa {clr 24}Tiro de Sombras{/clr} e causa {clr 8}200 pontos de dano{/clr} em {wvy}Sethyr{/wvy}.{pg}Você matou Sethyr. Novamente.{pg}{exit "r" 8 7 "fade_w"}dialogo brabo(bia){pg}{exit "11" 8 6 "fade_w"}
+Você não é mais afetado pela armadilha de Sethyr.{pg}Mors usa {clr 24}Tiro de Sombras{/clr} e causa {clr 8}200 pontos de dano{/clr} em {wvy}Sethyr{/wvy}.{pg}Você matou Sethyr. Novamente.{pg}{exit "r" 8 7 "fade_w"}Agora vai.{pg}{exit "11" 8 6 "fade_w"}
 NAME placeholder boss 2 loop 2(1) dialog
 
 DLG sr0
-Você ataca {wvy}Sethyr{/wvy}...{pg}E dá {clr 8}300 pontos de dano{/clr}.{placeholder_boss2 = placeholder_boss2 - 300}{pg}Você matou Sethyr. Novamente.{pg}{exit "r" 8 7 "fade_w"}dialogo brabo(bia){pg}{exit "11" 8 6 "fade_w"}
+Você ataca {wvy}Sethyr{/wvy}...{pg}E dá {clr 8}300 pontos de dano{/clr}.{placeholder_boss2 = placeholder_boss2 - 300}{pg}Você matou Sethyr. Novamente.{pg}{exit "r" 8 7 "fade_w"}Agora vai.{pg}{exit "11" 8 6 "fade_w"}
 NAME placeholder boss 2 loop 2(2) dialog
 
 DLG sr1
-{exit "r" 0 0 "fade_w"}(COLOCAR DIALOGO)
+{exit "r" 0 0 "fade_w"}Os fantasmas são fáceis de matar.
 NAME exit dialog loop1
 
 DLG sr2
 """
 Você ataca {clr 8}{wvy}O Cavaleiro{wvy}{/clr}...{pg}Você dá {clr 1}650 pontos{/clr} de dano.{pg}{clr 8}{wvy}O Cavaleiro{/wvy}{/clr} te ataca...
-{pg}E te dá {shk}{clr 8}1000 de dano{/clr}{/shk}.{pg}Você tem 250 de HP restantes.{pg}Você ataca {clr 8}{wvy}O Cavaleiro{wvy}{/clr} novamente, dessa vez imbuindo {clr 24}Energia{/clr} em sua espada.{pg}Você dá {clr 8}1250{/clr} pontos de dano.{pg}{clr 8}{wvy}O Cavaleiro{/wvy}{/clr} te ataca...{pg}{exit "r" 9 9 "fade_b"}E te dá {shk}{clr 8}1000 de dano{/clr}{/shk}.{pg}Você morreu. De novo.{pg}{exit "z" 2 13 "fade_w"}
+{pg}E te dá {shk}{clr 8}1000 de dano{/clr}{/shk}.{pg}Você tem 250 de HP restantes.{pg}Você ataca {clr 8}{wvy}O Cavaleiro{wvy}{/clr} novamente, dessa vez imbuindo {clr 24}Energia{/clr} em sua espada.{pg}Você dá {clr 8}1250{/clr} pontos de dano.{pg}{clr 8}{wvy}O Cavaleiro{/wvy}{/clr} te ataca...{pg}{exit "r" 9 9 "fade_b"}E te dá {shk}{clr 8}1000 de dano{/clr}{/shk}.{pg}Você morreu. De novo.{pg}{exit "12" 2 13 "fade_w"}
 """
 NAME boss 3 loop2 dialog
 
 DLG sr3
 """
 Você ataca {clr 8}{wvy}O Cavaleiro{/wvy}{/clr}...{pg}{shuffle
-  - Você dá {clr 1}1250 pontos{/clr} de dano.{ = -1250}
-  - Você dá {clr 1}1500 pontos {/clr}de dano.{ = -1500}
-  - Crítico! Você dá {clr 1}2000 pontos{/clr} de dano.{ = -2000}
+  - Você dá {clr 9}2500 pontos{/clr} de dano.{placeholder_boss3 = placeholder_boss3 - 2500}
 }{
-  - {placeholder_boss1} < 1 ?
+  - {placeholder_boss3} < 1 ?
     {pg}Você matou {clr 8}{wvy}O Cavaleiro{/wvy}{/clr}.
-    {exit "a" 8 8 "fade_w"}
+    {exit "14" 9 8 "fade_w"}
   - else ?
-    {pg}{clr 8}{wvy}O Cavaleiro{/wvy}{/clr} te ataca...{pg}{shuffle
-      - E te dá {clr 1}1000 pontos{/clr} de dano!{ = -1000}
-      - E te dá {clr 1}1100 pontos{/clr} de dano!{ = -1100}
-      - E te dá {clr 1}1300 pontos{/clr} de dano!{ = -1300}
-      - E te dá {clr 1}1500 pontos{/clr} de dano!{ = -1500}
-      - Crítico! Você recebeu {clr 1}1850 pontos{/clr} de dano!{ = -1850}
-      - E suga parte do seu espírito, recuperando {clr 1}350 pontos{/clr} de vida!{ = -350}{ =  + 350}
-    }{
-      - {hp loop 3} < 1 ?
-        {pg}Você morreu...{pg}{end}Boa sorte na próxima.
-      - else ?
-        {pg}Você tem {say hp loop 3} HP restantes.
-        {clr 8}{wvy}O Cavaleiro{/wvy}{/clr} tem {say hp boss final} HP restantes.
-    }
+    {pg}{clr 8}{wvy}O Cavaleiro{/wvy}{/clr} te ataca...{pg}Mas você bloqueia.
 }
 """
 NAME placeholder boss 3 loop 3
@@ -3595,16 +3656,42 @@ DLG sr5
 NAME locked exit 4
 
 DLG sr6
-{exit "r" 0 0 "fade_b"}{shk}Mais ossos são quebrados...{/shk}{pg}Não faz sentido...
+{exit "r" 0 0 "fade_b"}{shk}Mais ossos são quebrados...{/shk}{pg}De novo...{pg}Você ataca Ghorr...{pg}Causando {clr 8}500 pontos de dano{/clr}.{pg}Ghorr não é mais um desafio. Tampouco são os fantasmas.{pg}{shk}{clr 8}Você{/clr}{/shk} usa {clr 24}Destruição Espiritual{/clr} no exército de fantasmas, causando {wvy}{clr 8}500 pontos de dano{/clr}{/wvy}.{pg}Sethyr lhe aguarda.
 NAME exit narration 4
 
-DLG sr8
-Como a mesa quebrou?
-NAME exit narration 6
-
 DLG sr9
-{exit "r" 0 0 "fade_b"}Você ataca Ghorr...{pg}Causando {clr 8}500 pontos de dano{/clr}.{pg}Ghorr não é mais um desafio.{pg}{shk}{clr 8}Você{/clr}{/shk} usa {clr 24}Destruição Espiritual{/clr} no exército de fantasmas, causando {wvy}{clr 8}500 pontos de dano{/clr}{/wvy}.{pg}Tampouco são os fantasmas.
+{exit "r" 0 0 "fade_b"}Você ataca Ghorr...{pg}Causando {clr 8}500 pontos de dano{/clr}.{pg}Ghorr não é mais um desafio. Tampouco são os fantasmas.{pg}{shk}{clr 8}Você{/clr}{/shk} usa {clr 24}Destruição Espiritual{/clr} no exército de fantasmas, causando {wvy}{clr 8}500 pontos de dano{/clr}{/wvy}.{pg}Sethyr lhe aguarda.
 NAME exit narration 7
+
+DLG sra
+{shk}Eu não aguento mais isso...{/shk}
+NAME chave loop 3 dialog
+
+DLG srb
+"""
+{
+  - {item "d"} >= 1 ?
+    {property locked false}{clr 1}Mors:{/clr} Lá vamos nós...
+  - else ?
+    {property locked true}Está trancado. {shk}Obviamente.{/shk}
+}
+"""
+NAME locked exit 5
+
+DLG src
+{exit "r" 0 0 "fade_b"}Esqueletos, Ghorr, fantasmas, Sethyr...{pg}O sangue deles escorre pelas minhas mãos mais uma vez...{pg}Me sinto cada vez mais forte...{pg}Mas a que custo?{pg}Quanta morte é morte o suficiente?
+NAME exit narration 8
+
+DLG sre
+"""
+{exit "r" 0 0 "fade_b"}Mais uma {clr 24}lembrança{/clr}...{pg}Consigo sentir a espada inimiga atravessando meu peito.{pg}Acho que nunca estive tão assustado.{pg}...{pg}É isso que eu causo?{pg}{clr 24}Eu nem sei pelo que estava lutando...{/clr}{pg}{end}Fim da demo! {rbw}<3{/rbw}
+Nos siga no Instagram para os próximos capítulos: {rbw}@mortispactum{/rbw}
+"""
+NAME fragmento 3 dialog
+
+DLG srf
+Mazelinha: Que mazela
+NAME exit dialog 1
 
 VAR esqueleto1
 12
@@ -3635,6 +3722,9 @@ VAR hp_loop1
 
 VAR hp_evo_loop1
 350
+
+VAR placeholder_boss3
+3500
 
 TUNE 1
 r,m,d,0,0,l,s,0,m,0,s,0,0,2l,0,d5
@@ -55505,6 +55595,7 @@ CHAR 65533
 00000000
 00000000
 </script>
+</script>
 
 <style>
 html {
@@ -55516,7 +55607,7 @@ body {
 	margin:0px;
 	padding:0px;
 	overflow:hidden;
-	background:#ffffff;
+	background:#000000;
 }
 
 #game {
@@ -67205,6 +67296,7 @@ CHAR 9835
 011011
 011000
 000000
+</script>
 </script>
 
 </head>
