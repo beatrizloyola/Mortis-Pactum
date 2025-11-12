@@ -7,54 +7,61 @@ public class PlayerMovement : MonoBehaviour
     public bool canMoveDiagonally = true; // Controls whether the player can move diagonally
 
     // Private variables 
-    private Rigidbody2D rb; // Reference to the Rigidbody2D component attached to the player
+    private Rigidbody2D rb; // Reference to the Rigidbody2D component
     private Vector2 movement; // Stores the direction of player movement
-    private bool isMovingHorizontally = true; // Flag to track if the player is moving horizontally
+    private bool isMovingHorizontally = true; // Tracks if the player is moving horizontally
+    private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer
 
     void Start()
     {
-        // Initialize the Rigidbody2D component
+        // Initialize the Rigidbody2D and SpriteRenderer components
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
-        // Get player input from keyboard or controller
+        // Get player input
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
 
         // Check if diagonal movement is allowed
         if (canMoveDiagonally)
         {
-            // Set movement direction based on input
             movement = new Vector2(horizontalInput, verticalInput);
+
+            // Flip sprite if moving horizontally
+            if (horizontalInput > 0)
+                spriteRenderer.flipX = true;
+            else if (horizontalInput < 0)
+                spriteRenderer.flipX = false;
         }
         else
         {
-            // Determine the priority of movement based on input
+            // Determine priority of movement based on input
             if (horizontalInput != 0)
             {
                 isMovingHorizontally = true;
+                spriteRenderer.flipX = horizontalInput < 0;
             }
             else if (verticalInput != 0)
             {
                 isMovingHorizontally = false;
             }
-            
-            if (isMovingHorizontally)
-            {
-                movement = new Vector2(horizontalInput, 0);
-            }
-            else
-            {
-                movement = new Vector2(0, verticalInput);
-            }
+
+            movement = isMovingHorizontally
+                ? new Vector2(horizontalInput, 0)
+                : new Vector2(0, verticalInput);
         }
+
+        // Normalize to maintain consistent speed when moving diagonally
+        if (movement.magnitude > 1)
+            movement.Normalize();
     }
 
     void FixedUpdate()
     {
-        // Apply movement to the player in FixedUpdate for physics consistency
+        // Apply movement using new Unity 6 physics API
         rb.linearVelocity = movement * speed;
     }
 }
